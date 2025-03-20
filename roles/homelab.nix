@@ -1,7 +1,7 @@
 {lib, ...}: let
   inherit (lib.custom) enabled;
 in {
-  nixos.services = {
+  homelab = {
     blocky = enabled;
   };
 }
