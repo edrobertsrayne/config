@@ -16,6 +16,7 @@ in {
       enable = true;
       settings = {
         ports.dns = 53;
+        ports.http = 4000;
         upstreams.groups.default = [
           "https://one.one.one.one/dns-query"
         ];
