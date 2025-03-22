@@ -8,7 +8,7 @@ with lib.custom; let
   service = "plex";
   cfg = config.homelab.${service};
 in {
-  options.homelab.${service} = {
+  options.homelab.${service} = with types; {
     enabled = mkEnableOption "Whether to enable ${service}.";
     port = mkOption int 32400 "The port to use for ${service}.";
     subdomain = mkOption str "${service}" "The subdomain to use for ${service}.";

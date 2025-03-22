@@ -4,6 +4,7 @@
   inputs,
   ...
 }:
+with lib;
 with lib.custom; let
   cfg = config.modules.home-manager;
 in {
