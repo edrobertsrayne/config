@@ -5,6 +5,7 @@
 }:
 with lib.custom; {
   modules = {
+    home-manager = enabled;
     hardware.network = enabled;
     services = {
       avahi = enabled;
